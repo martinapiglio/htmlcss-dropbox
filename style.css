@@ -110,13 +110,15 @@ main .main-top .container .main-top-inner .main-top-inner-img img {
 /* /main-top */
 
 /* main-center */
-main .main-center .container {
+main .main-center .container,
+main .main-bottom .container {
     max-width: 700px;
     margin: auto;
     padding: 100px 0 0 0;
 }
 
-main .main-center .container h2 {
+main .main-center .container h2,
+main .main-bottom .container h2 {
     font-size: 2em;
     padding-bottom: 40px;  
 }
@@ -264,3 +266,32 @@ main #partner #partner-text h3 {
 main #partner #partner-text p {
     padding-bottom: 1.5em;
 }
+
+main #operations {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main #operations .operation-box {
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+    padding: 1em;
+}
+
+main #operations .operation-box img{
+    width: 100%;
+}
+
+main #operations .operation-box .operations-header {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+main #operations .operation-box .operations-text {
+    font-size: .8em;
+    padding-bottom: .8em;
+}
+/* /main-center */
+
+/* main-bottom */
