@@ -31,20 +31,25 @@ header nav .navbar-right {
     flex-flow: row wrap;
     align-items: center;
     gap: 2em;
+
+    padding: 0 10px 0 10px;
 } 
 
 header nav .container .navbar-left div, 
 header nav .container .navbar-right div {
     padding: 20px 10px;
+    cursor: pointer;
 }
 
-/* test: how to color margin bottom when hover on navbar */
-/* header nav .container .navbar-left div:hover, .navbar-right div:hover{
-    border-bottom: 1px solid black;
-} */
+header nav .container .navbar-left #logo {
+    cursor: pointer;
+}
 
+/* bonus: how to color margin bottom when hover on navbar */
+header nav .container .navbar-left div:hover, .navbar-right div:hover{
+    border-bottom: 2px solid #0061ff;;
+}
 /* /header */
-
 
 /* main */
 /* main-top */
@@ -80,6 +85,7 @@ main .main-top .container .main-top-inner .main-top-inner-text div{
     padding-bottom: 30px;
 }
 
+/* bonus: arrow-down leads to main-center section */
 main .main-top .container .main-top-inner .main-top-inner-text #arrow-down {
     color: black;
     font-size: 3em;
@@ -218,4 +224,43 @@ main .main-center .container .business-plans-bottom {
 main .main-center .container .business-plans-bottom .container-flex {
     padding: 1.2em;
     display: flex;
+}
+
+main .main-center .container .business-plans-bottom {
+    margin-bottom: 7em;
+}
+
+.business-plans-bottom .business-plan-text .price{
+    padding-bottom: 3em;
+}
+
+main #partner {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5em;
+
+    font-size: .8em;
+    padding-bottom: 6em;
+}
+
+main #partner #partner-img{
+    width: 65%; 
+}
+
+main #partner #partner-img img{
+    width: 100%; 
+}
+
+main #partner #partner-text {
+    width: 35%;
+    padding-top: 3em;
+}
+
+main #partner #partner-text h3 {
+    font-size: 1.5em;
+    padding-bottom: .8em;
+}
+
+main #partner #partner-text p {
+    padding-bottom: 1.5em;
 }
