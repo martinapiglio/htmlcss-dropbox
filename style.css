@@ -295,3 +295,45 @@ main #operations .operation-box .operations-text {
 /* /main-center */
 
 /* main-bottom */
+main .main-bottom .container h2 {
+    width: 70%;
+}
+
+main .main-bottom .container {
+    padding-bottom: 6em;
+}
+
+main .main-bottom .clients {
+    display: flex;
+}
+
+/* to do:
+- buttons styling
+- input radio styling
+- main-bottom section corrections/styling
+- last two main bottom sections
+- footer
+
+- corrections misc */
+
+/* to be finished from now on */
+main .main-bottom .clients-left,
+main .main-bottom .clients-center,
+main .main-bottom .clients-right {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid green; /* test */
+}
+
+main .main-bottom .square {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    border: 1px solid blue; /* test */
+}
+
+main .main-bottom .square img {
+    width: 60%;
+    height: auto;
+} 
