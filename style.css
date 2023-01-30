@@ -124,6 +124,8 @@ main .main-center .container .business-plans {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    padding-bottom: 2.5em;
 }
 
 main .main-center .container .business-plans .business-plan-col {
@@ -132,7 +134,7 @@ main .main-center .container .business-plans .business-plan-col {
     width: 30%
 }
 
-.business-plan-col .business-plan-name {
+.business-plan-name {
     text-align: center;
     border-bottom: 1px solid #d4d4d6;
     padding: 5px;
@@ -142,12 +144,12 @@ main .main-center .container .business-plans .business-plan-col {
     padding: 1.2em;
 }
 
-.business-plan-col .business-plan-text h3{
+.business-plan-text h3{
     font-size: 1.5em;
     padding-bottom: .8em;
 }
 
-.business-plan-col .business-plan-text .price{
+.business-plan-text .price{
     font-weight: bold;
     padding-bottom: .8em;
 }
@@ -208,3 +210,12 @@ main .main-center .container .business-plans .business-plan-col {
     padding-bottom: 1.5em;
 }
 
+main .main-center .container .business-plans-bottom {
+    font-size: .8em;
+    border: 1px solid #d4d4d6;
+}
+
+main .main-center .container .business-plans-bottom .container-flex {
+    padding: 1.2em;
+    display: flex;
+}
