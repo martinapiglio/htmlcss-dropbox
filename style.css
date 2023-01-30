@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 header {
     width: 100%;
@@ -41,7 +45,9 @@ header nav .container .navbar-right div {
 
 /* /header */
 
+
 /* main */
+/* main-top */
 main .main-top {
     background-color: #b4d0e7;
 }
@@ -95,7 +101,110 @@ main .main-top .container .main-top-inner .main-top-inner-img img {
     
     width: 70%;
 } 
+/* /main-top */
 
+/* main-center */
+main .main-center .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 100px 0 0 0;
+}
 
+main .main-center .container h2 {
+    font-size: 2em;
+    padding-bottom: 40px;  
+}
 
+main .main-center .container .input-fatturazione  {
+    font-size: .8em;
+    padding-bottom: 40px;  
+}
+
+main .main-center .container .business-plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .main-center .container .business-plans .business-plan-col {
+    font-size: .8em;
+    border: 1px solid #d4d4d6;
+    width: 30%
+}
+
+.business-plan-col .business-plan-name {
+    text-align: center;
+    border-bottom: 1px solid #d4d4d6;
+    padding: 5px;
+}
+
+.business-plan-col .business-plan-text {
+    padding: 1.2em;
+}
+
+.business-plan-col .business-plan-text h3{
+    font-size: 1.5em;
+    padding-bottom: .8em;
+}
+
+.business-plan-col .business-plan-text .price{
+    font-weight: bold;
+    padding-bottom: .8em;
+}
+
+.business-plan-col .business-plan-text .frequency{
+    color: #717272;
+    padding-bottom: 3em;
+}
+
+.business-plan-col ul {
+    list-style-type: none;
+}
+
+.business-plan-col ul li {
+    padding-bottom: 1em;
+}
+
+.business-plan-col .plan-char li:last-child {
+    padding-bottom: 3em;
+}
+
+.business-plan-col .plan-char li:first-child:before {
+    font-family: 'FontAwesome';
+    content: '\f406'; 
+    padding-right: 0.3em;
+}
+
+.business-plan-col .plan-char li:nth-child(2):before {
+    font-family: 'FontAwesome';
+    content: '\f07b';
+    padding-right: 0.3em;
+}
+
+.business-plan-col .plan-char li:last-child:before {
+    font-family: 'FontAwesome';
+    content: '\f1e0'; 
+    padding-right: 0.3em;
+}
+
+.business-plan-col .plan-pro li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';  
+    color: #0061ff;
+    padding-right: 0.3em; 
+  }
+
+.business-plan-col .business-plan-text button.free-trial {
+    margin-bottom: 1.5em;
+}
+
+.business-plan-col .business-plan-text hr {
+    width: 20%;
+    margin: 2em 0 3em 0;
+}
+
+.business-plan-col .business-plan-text strong {
+    display: block;
+    padding-bottom: 1.5em;
+}
 
