@@ -388,11 +388,57 @@ main .main-bottom .clients-center hr {
     width: 20%;
 }
 
+main .main-bottom .main-bottom-try {
+    background-color: #b4d0e7;
+}
+
+main .main-bottom .main-bottom-try .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main .main-bottom .main-bottom-faq .container hr {
+    margin: 1.5em 0;
+}
+
+/* main-bottom-faq */
+.question span {
+    font-size: .8em;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question i {
+    font-size: .6em;
+}
+
+.answer {
+    font-size: .8em;
+    padding-top: 1em;
+    display: none;
+}
+
+.question:hover .answer {
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 /* to do:
 - buttons styling
 - input radio styling
-- last two main bottom sections
+- links/cursor
+
 - footer
 
 - corrections misc */
