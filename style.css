@@ -425,20 +425,60 @@ main .main-bottom .main-bottom-faq .container hr {
 .question:hover .answer {
     display: block;
 }
+/* /main-bottom-faq */
+/* /main-bottom */
 
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+}
 
+footer .container {
+    max-width: 850px;
+    margin: auto;
+}
 
+footer .container .footer-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 4em 0;
+    
+    font-size: .8em;
+}
 
+footer .container .footer-inner .footer-col h4 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
 
+footer .container .footer-inner .footer-col ul {
+    list-style-type: none;
+}
 
+footer .container .footer-inner .footer-col ul li{
+    padding-bottom: 0.5em;
+}
 
+footer .container hr {
+    width: 15%;
+    margin-bottom: 2em;
+}
+
+footer .container .language {
+    color: #989999;
+    font-size: .8em;
+    padding-bottom: 3em;
+}
 
 
 /* to do:
 - buttons styling
 - input radio styling
 - links/cursor
-
-- footer
 
 - corrections misc */
