@@ -124,9 +124,11 @@ main .main-bottom .container h2 {
     padding-bottom: 40px;  
 }
 
-main .main-center .container .input-fatturazione  {
+main .main-center .container .input-fatturazione {
     font-size: .8em;
-    padding-bottom: 40px;  
+    padding-bottom: 40px; 
+    display: flex; 
+    gap: 1.5em
 }
 
 main .main-center .container .business-plans {
@@ -207,6 +209,7 @@ main .main-center .container .business-plans .business-plan-col {
 
 .business-plan-col .business-plan-text button.free-trial {
     margin-bottom: 1.5em;
+    width: 100%;
 }
 
 .business-plan-col .business-plan-text hr {
@@ -222,15 +225,17 @@ main .main-center .container .business-plans .business-plan-col {
 main .main-center .container .business-plans-bottom {
     font-size: .8em;
     border: 1px solid #d4d4d6;
+    margin-bottom: 7em;
 }
 
 main .main-center .container .business-plans-bottom .container-flex {
     padding: 1.2em;
     display: flex;
+    justify-content: space-between;
 }
 
-main .main-center .container .business-plans-bottom {
-    margin-bottom: 7em;
+.business-plans-bottom .container-flex .business-plan-text {
+    width: 75%
 }
 
 .business-plans-bottom .business-plan-text .price{
@@ -296,7 +301,7 @@ main #operations .operation-box .operations-text {
 /* /main-center */
 
 /* main-bottom */
-main .main-bottom .container h2 {
+main .main-bottom .main-bottom-header h2 {
     width: 70%;
 }
 
@@ -328,6 +333,8 @@ main .main-bottom .square {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 main .main-bottom #square-green {
@@ -394,8 +401,10 @@ main .main-bottom .main-bottom-try {
 
 main .main-bottom .main-bottom-try .container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
 }
 
 main .main-bottom .main-bottom-faq .container hr {
@@ -410,6 +419,8 @@ main .main-bottom .main-bottom-faq .container hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .question i {
@@ -464,6 +475,11 @@ footer .container .footer-inner .footer-col ul li{
     padding-bottom: 0.5em;
 }
 
+footer .container .footer-inner .footer-col ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 footer .container hr {
     width: 15%;
     margin-bottom: 2em;
@@ -475,10 +491,28 @@ footer .container .language {
     padding-bottom: 3em;
 }
 
+footer .container .language .fa-caret-up{
+    cursor: pointer;
+}
+/* /footer */
 
-/* to do:
-- buttons styling
-- input radio styling
-- links/cursor
+/* buttons */
+.buttons {
+    padding: .5em .8em;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
 
-- corrections misc */
+.blue-buttons {
+    background-color: #0061ff;
+    color: white;
+}
+
+.white-buttons {
+    background-color: white;
+}
+
+#partner-text .white-buttons {
+    border: 1px solid black;
+}
