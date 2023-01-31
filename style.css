@@ -46,7 +46,8 @@ header nav .container .navbar-left #logo {
 }
 
 /* bonus: how to color margin bottom when hover on navbar */
-header nav .container .navbar-left div:hover, .navbar-right div:hover{
+header nav .container .navbar-left div:hover, 
+header nav .container .navbar-right div:hover{
     border-bottom: 2px solid #0061ff;;
 }
 /* /header */
@@ -307,33 +308,91 @@ main .main-bottom .clients {
     display: flex;
 }
 
-/* to do:
-- buttons styling
-- input radio styling
-- main-bottom section corrections/styling
-- last two main bottom sections
-- footer
-
-- corrections misc */
-
-/* to be finished from now on */
 main .main-bottom .clients-left,
 main .main-bottom .clients-center,
 main .main-bottom .clients-right {
     width: calc(100% / 3);
     height: calc(100vw / 3);
+}
+
+main .main-bottom .clients-left,
+main .main-bottom .clients-right {
     display: flex;
     flex-flow: row wrap;
-    border: 2px solid green; /* test */
 }
 
 main .main-bottom .square {
     width: calc(100% / 2);
     height: calc(100% / 2);
-    border: 1px solid blue; /* test */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-bottom #square-green {
+    background-color: #a2d39b;
+    border: 12px solid #d1e9cd;
+}
+
+main .main-bottom #square-bordeaux {
+    background-color: #61082b;
+}
+
+main .main-bottom #square-skyblue {
+    background-color: #0093ce;
+}
+
+main .main-bottom #square-red {
+    background-color: #ff1c1c;
+}
+
+main .main-bottom #square-grey {
+    background-color: #f5f5f5;
+}
+
+main .main-bottom #square-darkred {
+    background-color: #d5001f;
+}
+
+main .main-bottom #square-lightblue {
+    background-color: #b4d0e7;
+}
+
+main .main-bottom #square-blue {
+    background-color: #0d2481;
+}
+
+main .main-bottom #square-yellow {
+    background-color: #ffd830;
 }
 
 main .main-bottom .square img {
-    width: 60%;
+    width: 50%;
     height: auto;
+    filter: invert(1);
 } 
+
+main .main-bottom .clients-center {
+    font-size: .8em;
+    padding: 3em;
+}
+
+main .main-bottom .clients-center img,
+main .main-bottom .clients-center p {
+    padding-bottom: 3em;
+}
+
+main .main-bottom .clients-center hr {
+    margin-bottom: 3em;
+    width: 20%;
+}
+
+
+/* to do:
+- buttons styling
+- input radio styling
+- last two main bottom sections
+- footer
+
+- corrections misc */
