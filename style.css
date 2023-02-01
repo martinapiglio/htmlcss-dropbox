@@ -30,14 +30,15 @@ header nav .navbar-right {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 
-    padding: 0 10px 0 10px;
+    padding: 0 .8em;
 } 
 
 header nav .container .navbar-left div, 
 header nav .container .navbar-right div {
-    padding: 20px 10px;
+    padding: 1.2em .8em;
+    border: 2px solid transparent;
     cursor: pointer;
 }
 
@@ -45,9 +46,9 @@ header nav .container .navbar-left #logo {
     cursor: pointer;
 }
 
-/* bonus: how to color margin bottom when hover on navbar */
+/* bonus: margin bottom when hover on navbar */
 header nav .container .navbar-left div:hover, 
-header nav .container .navbar-right div:hover{
+header nav .container .navbar-right div:hover {
     border-bottom: 2px solid #0061ff;;
 }
 /* /header */
@@ -61,20 +62,18 @@ main .main-top {
 main .main-top .container {
     max-width: 850px;
     margin: auto;
-    padding: 100px 0 0 0;
+    padding: 6.5rem 0 0 0;
 }
 
 main .main-top .container h1 {
     font-size: 3.5em;
     font-weight: 800;
-    padding-bottom: 40px;    
+    padding-bottom: .7em;    
 }
 
 main .main-top .container .main-top-inner {
     display: flex;
     flex-flow: row;
-
-    position: relative;
 }
 
 main .main-top .container .main-top-inner .main-top-inner-text{
@@ -83,7 +82,7 @@ main .main-top .container .main-top-inner .main-top-inner-text{
 }
 
 main .main-top .container .main-top-inner .main-top-inner-text div{
-    padding-bottom: 30px;
+    padding-bottom: 2em;
 }
 
 /* bonus: arrow-down leads to main-center section */
@@ -98,6 +97,8 @@ main .main-top .container .main-top-inner .main-top-inner-text #arrow-down {
 }
 
 main .main-top .container .main-top-inner .main-top-inner-img {
+    position: relative;
+    
     width: 70%;
 }
 
@@ -106,7 +107,7 @@ main .main-top .container .main-top-inner .main-top-inner-img img {
     top: 0;
     right: 0;   
     
-    width: 70%;
+    width: 100%;
 } 
 /* /main-top */
 
@@ -115,18 +116,18 @@ main .main-center .container,
 main .main-bottom .container {
     max-width: 700px;
     margin: auto;
-    padding: 100px 0 0 0;
+    padding: 6.5rem 0 0 0;
 }
 
 main .main-center .container h2,
 main .main-bottom .container h2 {
     font-size: 2em;
-    padding-bottom: 40px;  
+    padding-bottom: 1.8em;  
 }
 
 main .main-center .container .input-fatturazione {
     font-size: .8em;
-    padding-bottom: 40px; 
+    padding-bottom: 3em; 
     display: flex; 
     gap: 1.5em
 }
@@ -380,9 +381,15 @@ main .main-bottom .square img {
     filter: invert(1);
 } 
 
+main .main-bottom .clients .clients-center img {
+    width: 75%;
+    height: auto;
+} 
+
 main .main-bottom .clients-center {
     font-size: .8em;
     padding: 3em;
+    overflow: hidden;
 }
 
 main .main-bottom .clients-center img,
@@ -405,6 +412,11 @@ main .main-bottom .main-bottom-try .container {
     justify-content: space-between;
     align-items: flex-start;
     gap: 2em;
+}
+
+main .main-bottom .main-bottom-try .container h2{
+    width: 70%;
+    padding-bottom: 0;
 }
 
 main .main-bottom .main-bottom-faq .container hr {
@@ -438,6 +450,7 @@ main .main-bottom .main-bottom-faq .container hr {
 }
 /* /main-bottom-faq */
 /* /main-bottom */
+/* /main */
 
 /* footer */
 footer {
@@ -507,10 +520,23 @@ footer .container .language .fa-caret-up{
 .blue-buttons {
     background-color: #0061ff;
     color: white;
+
+    transition: 0.2s;
+}
+
+.blue-buttons:hover {
+    background-color: #0040a6;
 }
 
 .white-buttons {
     background-color: white;
+
+    transition: 0.2s;
+}
+
+
+.white-buttons:hover {
+    background-color: rgb(219, 219, 219);
 }
 
 #partner-text .white-buttons {
